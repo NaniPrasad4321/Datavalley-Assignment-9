@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+</head>
+<body>
+
+    <h2>Signup Form</h2>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="fullname">Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Full Name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Gmail ID" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" minlength="8" placeholder="Min 8 characters" required><br><br>
+
+        <label for="confirm_password">Confirm Password:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" minlength="8" placeholder="Min 8 characters" required><br><br>
+
+        <label for="dob">Date Of Birth:</label><br>
+        <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy" required><br><br>
+
+       <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" class="gender-input" required>
+        <label for="male" class="gender-label">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female" class="gender-input">
+        <label for="female" class="gender-label">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other" class="gender-input">
+        <label for="other" class="gender-label">Other</label><br><br>
+        <label for="photo">Insert your photo:</label><br>
+        <input type="file" id="photo" name="photo"><br><br>
+
+        <label for="resume">Insert your resume:</label><br>
+        <input type="file" id="resume" name="resume"><br><br>
+
+        <label for="security_question">Security Question:</label><br>
+        <select id="security_question" name="security_question" required>
+            <option value="">Select</option>
+            <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
+            <option value="What is the name of your first pet?">What is the name of your first pet?</option>
+            <option value="What city were you born in?">What city were you born in?</option>
+            <!-- Add more security questions as needed -->
+        </select><br><br>
+
+        <input type="checkbox" id="terms_conditions" name="terms_conditions" required>
+        <label for="terms_conditions">I agree to the terms and conditions</label><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
